@@ -5,6 +5,7 @@ import {HelpToReactMemo} from "./UseMemo";
 import {LikeUseCallback} from "./UseCallback";
 import ExempleState1 from "./UseState";
 import UseEffectExemple, {SetTimeOutExemple} from "./UseEffectExemple";
+import {UncontrolledAccordion} from "./UncontrolledAccordion";
 
 
 function App() {
@@ -15,8 +16,10 @@ function App() {
         {/*<LikeUseCallback/>*/}
 {/*<ExempleState1 />*/}
 {/*        <UseEffectExemple/>*/}
-        <SetTimeOutExemple/>
+{/*        <SetTimeOutExemple/>*/}
+    <UncontrolledAccordion titleValue={'lflflf'}/>
     </div>
+
   );
 }
 
