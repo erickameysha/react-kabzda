@@ -1,29 +1,25 @@
 import React, {useMemo, useState} from 'react';
 
 
-
-
-
-function genereteData() {
-    console.log('generet')
-    return 324582734
+function generateData() {
+    console.log('generation data')
+    return 3234
 }
-const ExempleState1 = () => {
-    // let initValue = useMemo(genereteData, [])
 
-
-    const [counter, setCounter]= useState(genereteData)
-     const changer =(state: number)=>{
-        debugger
-        return state+1}
-    console.log('exemle1')
+const Example1 = () => {
+    console.log('exemple1')
+    // const initValue = useMemo(generateData, [])
+    const [counter, setCounter] = useState(generateData)// [0, function(newValue){}]
+ const changer = ( state:number)=>{
+        return state + 1
+ }
 
     return (
         <div>
+            <button onClick={() => setCounter(changer)}>+</button>
             {counter}
-          <button onClick={()=> setCounter(counter+ 1)}> +</button>
         </div>
     );
 };
 
-export default ExempleState1;
+export default Example1;
